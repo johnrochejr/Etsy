@@ -15,7 +15,7 @@ function question1 () {
   for (let i = 0; i < prices; i++) {
     sum += data[i].price;
 }
-  console.log("The average price is $" + (sum) / (prices) + ".");
+  console.log("The average price is $" + Math.round(sum) / (prices) + ".");
 }
 
 
