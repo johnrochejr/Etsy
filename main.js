@@ -24,7 +24,11 @@ function question1 () {
 // and $18.00 USD
 
 function question2 () {
-  // Answer:
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].price >= 14 && data[i].price <= 18) {
+      console.log(data[i].title)
+    }
+  }
 }
 
 
