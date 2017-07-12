@@ -61,7 +61,13 @@ function question4 () {
 function question5 () {
   for (let i = 0; i < data.length; i++) {
     if (data[i].materials.length >= 8) {
-      console.log(data[i].title + " this item has " + data[i].materials.length + " items " + "\n" + data[i].materials);
+      console.log(data[i].title + " has " + data[i].materials.length + " materials: ")
+
+      for (let i = 0; i < data[i].materials.length; i++) {
+        console.log("\n" + "- " + data[i].materials);
+      }         // for loop going through materials
+              //   console.log one element of materials
+          //  + "\n" + "- " + data[i].materials);
     }
   }
 }
@@ -71,5 +77,27 @@ function question5 () {
 // Answer:
 
 function question6 () {
-
+  let sum = 0
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].who_made === "i_did") {
+      sum++
+    }
+  }
+  console.log(sum + " items were made by their sellers. " );
 }
+
+// How many people made their own items?
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
